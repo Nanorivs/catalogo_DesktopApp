@@ -18,3 +18,10 @@ C:\Users\Mariano\Desktop\Programación\DesktopApp_DigitalHouse\Negocio\obj\Debug
 C:\Users\Mariano\Desktop\Programación\DesktopApp_DigitalHouse\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
 C:\Users\Mariano\Desktop\Programación\DesktopApp_DigitalHouse\Negocio\obj\Debug\Negocio.dll
 C:\Users\Mariano\Desktop\Programación\DesktopApp_DigitalHouse\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Mariano\Desktop\catalogo_DesktopApp\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\Mariano\Desktop\catalogo_DesktopApp\Negocio\bin\Debug\Negocio.dll
+C:\Users\Mariano\Desktop\catalogo_DesktopApp\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Mariano\Desktop\catalogo_DesktopApp\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Mariano\Desktop\catalogo_DesktopApp\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Mariano\Desktop\catalogo_DesktopApp\Negocio\obj\Debug\Negocio.dll
+C:\Users\Mariano\Desktop\catalogo_DesktopApp\Negocio\obj\Debug\Negocio.pdb

@@ -49,8 +49,9 @@
             this.dgv_Articulos.RowHeadersWidth = 51;
             this.dgv_Articulos.RowTemplate.Height = 24;
             this.dgv_Articulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Articulos.Size = new System.Drawing.Size(717, 379);
+            this.dgv_Articulos.Size = new System.Drawing.Size(763, 194);
             this.dgv_Articulos.TabIndex = 0;
+            this.dgv_Articulos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Articulos_CellDoubleClick);
             // 
             // pb_logo
             // 
@@ -63,7 +64,7 @@
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.Location = new System.Drawing.Point(511, 515);
+            this.btn_Agregar.Location = new System.Drawing.Point(556, 397);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(106, 41);
             this.btn_Agregar.TabIndex = 2;
@@ -72,7 +73,7 @@
             // 
             // btn_Buscar
             // 
-            this.btn_Buscar.Location = new System.Drawing.Point(623, 515);
+            this.btn_Buscar.Location = new System.Drawing.Point(682, 397);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(106, 41);
             this.btn_Buscar.TabIndex = 3;
@@ -83,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 568);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.btn_Agregar);
             this.Controls.Add(this.pb_logo);

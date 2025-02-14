@@ -56,7 +56,24 @@ namespace Negocio.Helpers
             }
 
         }
-
+        public static void SoloLectura(Control controles, bool soloLectura = true)
+        {
+            foreach (Control ctrl in controles.Controls)
+            {
+                if (ctrl is TextBox textBox)
+                {
+                    textBox.ReadOnly = soloLectura; 
+                }
+                else if (ctrl is ComboBox comboBox)
+                {
+                    comboBox.Enabled = !soloLectura; 
+                }
+                else if (ctrl is NumericUpDown numericUpDown)
+                {
+                    numericUpDown.Enabled = !soloLectura;
+                }
+            }
+        }
 
 
 

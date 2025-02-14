@@ -1,0 +1,226 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9EEA8466-ACB0-4AE1-9CF3-BB8A79B2795B}|Interfaz\\Interfaz.csproj|c:\\users\\mariano\\desktop\\catalogo_desktopapp\\interfaz\\forms\\mostrarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EEA8466-ACB0-4AE1-9CF3-BB8A79B2795B}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\forms\\mostrarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EEA8466-ACB0-4AE1-9CF3-BB8A79B2795B}|Interfaz\\Interfaz.csproj|c:\\users\\mariano\\desktop\\catalogo_desktopapp\\interfaz\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EEA8466-ACB0-4AE1-9CF3-BB8A79B2795B}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1175D6-DC00-4CEE-AF03-453C888D88A2}|Negocio\\Negocio.csproj|c:\\users\\mariano\\desktop\\catalogo_desktopapp\\negocio\\helpers\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1175D6-DC00-4CEE-AF03-453C888D88A2}|Negocio\\Negocio.csproj|solutionrelative:negocio\\helpers\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EEA8466-ACB0-4AE1-9CF3-BB8A79B2795B}|Interfaz\\Interfaz.csproj|c:\\users\\mariano\\desktop\\catalogo_desktopapp\\interfaz\\forms\\mostrarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EEA8466-ACB0-4AE1-9CF3-BB8A79B2795B}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\forms\\mostrarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1175D6-DC00-4CEE-AF03-453C888D88A2}|Negocio\\Negocio.csproj|c:\\users\\mariano\\desktop\\catalogo_desktopapp\\negocio\\dominio\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1175D6-DC00-4CEE-AF03-453C888D88A2}|Negocio\\Negocio.csproj|solutionrelative:negocio\\dominio\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1175D6-DC00-4CEE-AF03-453C888D88A2}|Negocio\\Negocio.csproj|c:\\users\\mariano\\desktop\\catalogo_desktopapp\\negocio\\dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1175D6-DC00-4CEE-AF03-453C888D88A2}|Negocio\\Negocio.csproj|solutionrelative:negocio\\dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1175D6-DC00-4CEE-AF03-453C888D88A2}|Negocio\\Negocio.csproj|c:\\users\\mariano\\desktop\\catalogo_desktopapp\\negocio\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1175D6-DC00-4CEE-AF03-453C888D88A2}|Negocio\\Negocio.csproj|solutionrelative:negocio\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EEA8466-ACB0-4AE1-9CF3-BB8A79B2795B}|Interfaz\\Interfaz.csproj|c:\\users\\mariano\\desktop\\catalogo_desktopapp\\interfaz\\forms\\mostrarproducto.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EEA8466-ACB0-4AE1-9CF3-BB8A79B2795B}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\forms\\mostrarproducto.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C122775D-38AE-4F14-9902-14F0C6E82E00}|AccesoDB\\AccesoDB.csproj|c:\\users\\mariano\\desktop\\catalogo_desktopapp\\accesodb\\operacionesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C122775D-38AE-4F14-9902-14F0C6E82E00}|AccesoDB\\AccesoDB.csproj|solutionrelative:accesodb\\operacionesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EEA8466-ACB0-4AE1-9CF3-BB8A79B2795B}|Interfaz\\Interfaz.csproj|c:\\users\\mariano\\desktop\\catalogo_desktopapp\\interfaz\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EEA8466-ACB0-4AE1-9CF3-BB8A79B2795B}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Interfaz||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EEA8466-ACB0-4AE1-9CF3-BB8A79B2795B}|Interfaz\\Interfaz.csproj|c:\\users\\mariano\\desktop\\catalogo_desktopapp\\interfaz\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|6185191f-1008-4fb2-a715-3a4e4f27e610"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Utilidades.cs",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Negocio\\Helpers\\Utilidades.cs",
+              "RelativeDocumentMoniker": "Negocio\\Helpers\\Utilidades.cs",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Negocio\\Helpers\\Utilidades.cs",
+              "RelativeToolTip": "Negocio\\Helpers\\Utilidades.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAArwEgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T23:29:52.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MostrarProducto.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Forms\\MostrarProducto.Designer.cs",
+              "RelativeDocumentMoniker": "Interfaz\\Forms\\MostrarProducto.Designer.cs",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Forms\\MostrarProducto.Designer.cs",
+              "RelativeToolTip": "Interfaz\\Forms\\MostrarProducto.Designer.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAvwIAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:25:40.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MostrarProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Forms\\MostrarProducto.cs",
+              "RelativeDocumentMoniker": "Interfaz\\Forms\\MostrarProducto.cs",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Forms\\MostrarProducto.cs",
+              "RelativeToolTip": "Interfaz\\Forms\\MostrarProducto.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAvwDMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:12:53.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Forms\\Main.cs",
+              "RelativeDocumentMoniker": "Interfaz\\Forms\\Main.cs",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Forms\\Main.cs",
+              "RelativeToolTip": "Interfaz\\Forms\\Main.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAnwDcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T21:10:52.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MostrarProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Forms\\MostrarProducto.cs",
+              "RelativeDocumentMoniker": "Interfaz\\Forms\\MostrarProducto.cs",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Forms\\MostrarProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Interfaz\\Forms\\MostrarProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T21:07:31.517Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OperacionesDB.cs",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\AccesoDB\\OperacionesDB.cs",
+              "RelativeDocumentMoniker": "AccesoDB\\OperacionesDB.cs",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\AccesoDB\\OperacionesDB.cs",
+              "RelativeToolTip": "AccesoDB\\OperacionesDB.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAA2wFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T20:55:52.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Marca.cs",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Negocio\\Dominio\\Marca.cs",
+              "RelativeDocumentMoniker": "Negocio\\Dominio\\Marca.cs",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Negocio\\Dominio\\Marca.cs",
+              "RelativeToolTip": "Negocio\\Dominio\\Marca.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T20:50:26.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Negocio\\Dominio\\Categoria.cs",
+              "RelativeDocumentMoniker": "Negocio\\Dominio\\Categoria.cs",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Negocio\\Dominio\\Categoria.cs",
+              "RelativeToolTip": "Negocio\\Dominio\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T20:44:24.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Forms\\Main.cs",
+              "RelativeDocumentMoniker": "Interfaz\\Forms\\Main.cs",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Forms\\Main.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Interfaz\\Forms\\Main.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T20:43:51.907Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Interfaz",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Interfaz.csproj",
+              "RelativeDocumentMoniker": "Interfaz\\Interfaz.csproj",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Interfaz\\Interfaz.csproj",
+              "RelativeToolTip": "Interfaz\\Interfaz.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-13T20:43:21.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Articulo.cs",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Negocio\\Dominio\\Articulo.cs",
+              "RelativeDocumentMoniker": "Negocio\\Dominio\\Articulo.cs",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\catalogo_DesktopApp\\Negocio\\Dominio\\Articulo.cs",
+              "RelativeToolTip": "Negocio\\Dominio\\Articulo.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T20:39:15.677Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
