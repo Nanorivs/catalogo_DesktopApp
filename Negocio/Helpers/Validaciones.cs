@@ -42,6 +42,18 @@ namespace Negocio.Helpers
 
             return true;
         }
+        public static bool ValidarDecision(string encabezado) 
+        {
+            DialogResult respuesta = MessageBox.Show("¿Está seguro?", encabezado, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (respuesta == DialogResult.Yes)
+                return true;
+            else
+                return false;
+         
+        }
+
+
     }
 
 }

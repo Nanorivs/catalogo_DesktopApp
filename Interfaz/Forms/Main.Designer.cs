@@ -70,6 +70,7 @@
             this.btn_Agregar.TabIndex = 2;
             this.btn_Agregar.Text = "Agregar";
             this.btn_Agregar.UseVisualStyleBackColor = true;
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // btn_Buscar
             // 
@@ -79,6 +80,7 @@
             this.btn_Buscar.TabIndex = 3;
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = true;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
             // Main
             // 

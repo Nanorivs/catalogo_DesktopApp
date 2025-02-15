@@ -9,8 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio.Helpers;
-using AccesoDB;
 using Negocio.Dominio;
+using Negocio;
 
 
 
@@ -25,11 +25,11 @@ namespace Interfaz
         }
         public void VentanaPrincipal()
         {
-            OperacionesDB operacionesDB = new OperacionesDB();
+            Tareas operacionesDB = new Tareas();
             try
             {
 
-                dgv_Articulos.DataSource = operacionesDB.listar_articulos();
+                dgv_Articulos.DataSource = operacionesDB.listarArticulos();
                 dgv_Articulos.Columns["Imagen"].Visible = false;
                 dgv_Articulos.Columns["Id"].Visible = false;
                 dgv_Articulos.Columns["Precio"].DefaultCellStyle.Format = "N0";
@@ -47,7 +47,16 @@ namespace Interfaz
 
         private void Main_Load(object sender, EventArgs e)
         {
-            VentanaPrincipal();
+            try
+            {
+                VentanaPrincipal();
+            }
+            catch (Exception error) 
+            {
+                MessageBox.Show (error.ToString()); 
+            }
+
+
         }
 
         private void dgv_Articulos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -57,6 +66,18 @@ namespace Interfaz
             mostrarProducto.ShowDialog();
             VentanaPrincipal();
             
+        }
+
+        private void btn_Buscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Agregar_Click(object sender, EventArgs e)
+        {
+            MostrarProducto agregarProducto = new MostrarProducto();
+            agregarProducto.ShowDialog();
+            VentanaPrincipal();
         }
     }
 }

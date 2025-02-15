@@ -16,11 +16,7 @@ C:\Users\Mariano\Desktop\Programación\DesktopApp_DigitalHouse\AccesoDB\obj\Debu
 C:\Users\Mariano\Desktop\Programación\DesktopApp_DigitalHouse\AccesoDB\obj\Debug\AccesoDB.pdb
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\bin\Debug\AccesoDB.dll
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\bin\Debug\AccesoDB.pdb
-C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\bin\Debug\Negocio.dll
-C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\bin\Debug\Negocio.pdb
-C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\bin\Debug\Negocio.dll.config
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.csproj.AssemblyReference.cache
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.csproj.CoreCompileInputs.cache
-C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.csproj.Up2Date
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.dll
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.pdb

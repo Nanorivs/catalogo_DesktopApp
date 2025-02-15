@@ -164,6 +164,7 @@
             this.txt_Imagen.Name = "txt_Imagen";
             this.txt_Imagen.Size = new System.Drawing.Size(233, 22);
             this.txt_Imagen.TabIndex = 13;
+            this.txt_Imagen.Leave += new System.EventHandler(this.txt_Imagen_Leave);
             // 
             // comBox_Categoria
             // 

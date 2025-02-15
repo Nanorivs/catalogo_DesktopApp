@@ -17,7 +17,7 @@ namespace Negocio.Helpers
         public static void CargarImagen(PictureBox pictureBox,string imagen)
         {
             try
-            {  pictureBox.Load(imagen); }
+            {   pictureBox.Load(imagen); }
             catch 
             {
                 string errorImagen = ObtenerRutaImagen("notfound.png");
@@ -75,6 +75,7 @@ namespace Negocio.Helpers
             }
         }
 
+        
 
 
 
