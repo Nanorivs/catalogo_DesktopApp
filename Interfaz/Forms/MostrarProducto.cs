@@ -35,7 +35,7 @@ namespace Interfaz
             if (accion != null)
             {
                 this.accion = accion.ToLower();
-                this.Text += ": " + this.accion;
+                btn_Aceptar.Text = this.accion;
             }
 
             if(accion == "agregar" || accion == "modificar")
@@ -89,31 +89,32 @@ namespace Interfaz
         {   
             Tareas tareas = new Tareas();
             List<string> opciones = new List<string> { "agregar","modificar","eliminar"};
-                
+
             if (opciones.Contains(accion) && Validaciones.ValidarDecision(accion))
             {
-                Articulo newArticulo = new Articulo();
+                if(articulo == null)
+                    articulo = new Articulo();
 
-                newArticulo.Marca = (Marca)comBox_Marca.SelectedItem;
-                newArticulo.Categoria = (Categoria)comBox_Categoria.SelectedItem;
-                newArticulo.Codigo = txt_Codigo.Text;
-                newArticulo.Nombre = txt_Nombre.Text;
-                newArticulo.Descripcion = txt_Descripcion.Text;
-                newArticulo.Imagen = txt_Imagen.Text;
-                newArticulo.Precio = numUpDown_Precio.Value;
+                articulo.Marca = (Marca)comBox_Marca.SelectedItem;
+                articulo.Categoria = (Categoria)comBox_Categoria.SelectedItem;
+                articulo.Codigo = txt_Codigo.Text;
+                articulo.Nombre = txt_Nombre.Text;
+                articulo.Descripcion = txt_Descripcion.Text;
+                articulo.Imagen = txt_Imagen.Text;
+                articulo.Precio = numUpDown_Precio.Value;
 
                 switch (accion)
                 {
                     case "agregar":
-                        //tareas.agregarArticulo(articulo);
+                        tareas.agregarArticulo(articulo);
                         break;
 
                     case "modificar":
-                        //tareas.modificarArticulo(articulo);
+                        tareas.modificarArticulo(articulo);
                         break;
 
                     case "eliminar":
-                        //tareas.eliminarArticulo(articulo);
+                        tareas.eliminarArticulo(articulo.Id);
                         break;
                 }
                 MessageBox.Show("Tarea realizada exitosamente","MENSAJE",MessageBoxButtons.OK,MessageBoxIcon.Information);

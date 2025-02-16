@@ -20,3 +20,9 @@ C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.csproj.
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.csproj.CoreCompileInputs.cache
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.dll
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.pdb
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\AccesoDB\bin\Debug\AccesoDB.dll
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\AccesoDB\bin\Debug\AccesoDB.pdb
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.csproj.AssemblyReference.cache
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.csproj.CoreCompileInputs.cache
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.dll
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\AccesoDB\obj\Debug\AccesoDB.pdb

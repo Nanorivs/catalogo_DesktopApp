@@ -90,12 +90,6 @@ namespace Negocio
                 { throw error; }
             finally 
                 { lecturaDB.CerrarConexion(); }
-
-
-
-
-
-
         }
         public void agregarArticulo(Articulo articulo)
         {   
@@ -122,10 +116,42 @@ namespace Negocio
 
         }
         public void modificarArticulo(Articulo articulo)
-        {
+        {   LecturaDB lecturaDB = new LecturaDB();
+            try 
+            {
+                lecturaDB.SetearConsulta("Update ARTICULOS set Codigo = @Codigo,Nombre = @Nombre, Descripcion = @Descripcion ,IdMarca = @IdMarca,IdCategoria = @IdCategoria,ImagenUrl = @ImagenUrl , Precio = @Precio Where Id = @Id");
 
+                lecturaDB.SetearParametroComando("@Id", articulo.Id);
+                lecturaDB.SetearParametroComando("@Codigo",articulo.Codigo);
+                lecturaDB.SetearParametroComando("@Nombre",articulo.Nombre);
+                lecturaDB.SetearParametroComando("@Descripcion",articulo.Descripcion);
+                lecturaDB.SetearParametroComando("@IdMarca",articulo.Marca.Id);
+                lecturaDB.SetearParametroComando("@IdCategoria",articulo.Categoria.Id);
+                lecturaDB.SetearParametroComando("@ImagenUrl",articulo.Imagen);
+                lecturaDB.SetearParametroComando("@Precio",articulo.Precio);
+
+                lecturaDB.EjecutarConsulta();
+            }
+            catch (Exception error)
+            { throw error; }
+            finally 
+                { lecturaDB.CerrarConexion(); }
         }
-        public void eliminarArticulo(Articulo articulo) { }
+        public void eliminarArticulo(int idArticulo) 
+        {   
+            LecturaDB lecturaDB = new LecturaDB();
+            try 
+            {
+                lecturaDB.SetearConsulta("Delete From ARTICULOS Where Id = @Id");
+                lecturaDB.SetearParametroComando("@Id",idArticulo);
+
+                lecturaDB.EjecutarConsulta();
+            } 
+            catch(Exception error) 
+                { throw error; }
+            finally 
+                { lecturaDB.CerrarConexion(); }
+        }
         
     }
 }

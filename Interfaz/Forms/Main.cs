@@ -61,13 +61,6 @@ namespace Interfaz
 
         }
 
-        private void btn_Agregar_Click(object sender, EventArgs e)
-        {
-            MostrarProducto agregarProducto = new MostrarProducto(null,"agregar");
-            agregarProducto.ShowDialog();
-            VentanaPrincipal();
-        }
-
         private void dgv_Articulos_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -84,7 +77,6 @@ namespace Interfaz
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Articulo articulo = (Articulo)dgv_Articulos.CurrentRow.DataBoundItem;
-            
             MostrarProducto modificarProducto = new MostrarProducto(articulo,"modificar");
             modificarProducto.ShowDialog();
             VentanaPrincipal() ;
@@ -93,9 +85,15 @@ namespace Interfaz
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Articulo articulo = (Articulo)dgv_Articulos.CurrentRow.DataBoundItem;
-
-            MostrarProducto modificarProducto = new MostrarProducto(articulo, "eliminar");
+            MostrarProducto modificarProducto = new MostrarProducto(articulo,"eliminar");
             modificarProducto.ShowDialog();
+            VentanaPrincipal();
+        }
+
+        private void btn_Agregar_Click(object sender, EventArgs e)
+        {
+            MostrarProducto agregarProducto = new MostrarProducto(null, "agregar");
+            agregarProducto.ShowDialog();
             VentanaPrincipal();
         }
     }
