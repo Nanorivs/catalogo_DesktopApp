@@ -125,7 +125,8 @@ namespace Negocio
         {
 
         }
-
+        public void eliminarArticulo(Articulo articulo) { }
+        
     }
 }
 

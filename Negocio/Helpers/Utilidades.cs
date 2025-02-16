@@ -39,23 +39,7 @@ namespace Negocio.Helpers
                     throw error;
                 }
         }
-        public static void CargarComboBox(ComboBox comboBox, List<string> palabras)
-        {
-            try
-            {
-                comboBox.Items.Clear();
-                for (int i = 0; i < palabras.Count; i++)
-                {
-                    comboBox.Items.Add(palabras[i]);
-                }
 
-            }
-            catch (Exception)
-            {
-                comboBox.Items.Add("Error de carga");
-            }
-
-        }
         public static void SoloLectura(Control controles, bool soloLectura = true)
         {
             foreach (Control ctrl in controles.Controls)

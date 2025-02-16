@@ -28,12 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgv_Articulos = new System.Windows.Forms.DataGridView();
             this.pb_logo = new System.Windows.Forms.PictureBox();
             this.btn_Agregar = new System.Windows.Forms.Button();
             this.btn_Buscar = new System.Windows.Forms.Button();
+            this.contMenuStrip_Opciones = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Articulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
+            this.contMenuStrip_Opciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgv_Articulos
@@ -52,6 +57,7 @@
             this.dgv_Articulos.Size = new System.Drawing.Size(763, 194);
             this.dgv_Articulos.TabIndex = 0;
             this.dgv_Articulos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Articulos_CellDoubleClick);
+            this.dgv_Articulos.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_Articulos_CellMouseClick);
             // 
             // pb_logo
             // 
@@ -82,6 +88,29 @@
             this.btn_Buscar.UseVisualStyleBackColor = true;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
+            // contMenuStrip_Opciones
+            // 
+            this.contMenuStrip_Opciones.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contMenuStrip_Opciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modificarToolStripMenuItem,
+            this.eliminarToolStripMenuItem});
+            this.contMenuStrip_Opciones.Name = "contMenuStrip_Opciones";
+            this.contMenuStrip_Opciones.Size = new System.Drawing.Size(143, 52);
+            // 
+            // modificarToolStripMenuItem
+            // 
+            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.modificarToolStripMenuItem.Text = "Modificar";
+            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -91,6 +120,8 @@
             this.Controls.Add(this.btn_Agregar);
             this.Controls.Add(this.pb_logo);
             this.Controls.Add(this.dgv_Articulos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Main";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -98,6 +129,7 @@
             this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Articulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
+            this.contMenuStrip_Opciones.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -108,6 +140,9 @@
         private System.Windows.Forms.PictureBox pb_logo;
         private System.Windows.Forms.Button btn_Agregar;
         private System.Windows.Forms.Button btn_Buscar;
+        private System.Windows.Forms.ContextMenuStrip contMenuStrip_Opciones;
+        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
     }
 }
 

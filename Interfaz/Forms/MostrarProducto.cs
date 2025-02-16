@@ -10,27 +10,42 @@ using System.Windows.Forms;
 using Negocio.Dominio;
 using Negocio.Helpers;
 using Negocio;
+using System.Text.RegularExpressions;
+using System.Runtime.CompilerServices;
 
 namespace Interfaz
 {
     public partial class MostrarProducto : Form
     {
         Articulo articulo = null;
+        string accion = null;
+        bool modoEdicion = false;
         
-        public MostrarProducto()
+        /// <summary>
+        /// Keys: 
+        /// "modificar" "eliminar" "agregar".
+        /// Default: mostrar
+        /// </summary>
+        public MostrarProducto( Articulo articulo , string accion = null)
         {
             InitializeComponent();
-        }
-        public MostrarProducto(Articulo articulo)
-        {
-            InitializeComponent();
+
             this.articulo = articulo;
 
-        }
+            if (accion != null)
+            {
+                this.accion = accion.ToLower();
+                this.Text += ": " + this.accion;
+            }
 
+            if(accion == "agregar" || accion == "modificar")
+                modoEdicion = true;  
+        }
+        
         private void MostrarProducto_Load(object sender, EventArgs e)
         {
-            try { 
+            try 
+            { 
                 Tareas tareas = new Tareas();
 
                 comBox_Marca.DataSource = tareas.listarMarcas();
@@ -42,8 +57,8 @@ namespace Interfaz
                 comBox_Categoria.DisplayMember = "Descripcion";
 
                 string imagenArticulo = null;
-
-                if (articulo != null) 
+                
+                if (articulo != null)
                 { 
                     txt_Codigo.Text = articulo.Codigo;
                     txt_Descripcion.Text = articulo.Descripcion;
@@ -52,65 +67,69 @@ namespace Interfaz
                     numUpDown_Precio.Value = articulo.Precio;
                     comBox_Categoria.SelectedValue = articulo.Categoria.Id;
                     comBox_Marca.SelectedValue = articulo.Marca.Id;
-                    Utilidades.SoloLectura(this);
-                    imagenArticulo = articulo.Imagen;
-                }
 
+                    imagenArticulo = articulo.Imagen;
+
+                    if(!modoEdicion)
+                        Utilidades.SoloLectura(this);
+                    if(accion == null)
+                    {   
+                        lbl_Imagen.Visible = false;
+                        txt_Imagen.Visible = false;
+                    }
+                }
                 Utilidades.CargarImagen(pb_Articulo, imagenArticulo);
 
-
-            }catch(Exception error) { throw error; }
-
+            }
+            catch(Exception error) 
+                { throw error; }
         }
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
-        {   Tareas tareas = new Tareas();
-            bool agregar = false;
-
-            try 
+        {   
+            Tareas tareas = new Tareas();
+            List<string> opciones = new List<string> { "agregar","modificar","eliminar"};
+                
+            if (opciones.Contains(accion) && Validaciones.ValidarDecision(accion))
             {
-                if (articulo == null)
-                {
-                    articulo = new Articulo();
-                    agregar = true;
-                } 
-           
-                articulo.Marca = (Marca)comBox_Marca.SelectedItem;
-                articulo.Categoria = (Categoria)comBox_Categoria.SelectedItem;
-                articulo.Codigo = txt_Codigo.Text;
-                articulo.Nombre = txt_Nombre.Text;
-                articulo.Descripcion = txt_Descripcion.Text;
-                articulo.Imagen = txt_Imagen.Text;
-                articulo.Precio = numUpDown_Precio.Value;
+                Articulo newArticulo = new Articulo();
 
-                if (agregar)
+                newArticulo.Marca = (Marca)comBox_Marca.SelectedItem;
+                newArticulo.Categoria = (Categoria)comBox_Categoria.SelectedItem;
+                newArticulo.Codigo = txt_Codigo.Text;
+                newArticulo.Nombre = txt_Nombre.Text;
+                newArticulo.Descripcion = txt_Descripcion.Text;
+                newArticulo.Imagen = txt_Imagen.Text;
+                newArticulo.Precio = numUpDown_Precio.Value;
+
+                switch (accion)
                 {
-                    if (Validaciones.ValidarDecision("Agregar artículo"))
-                    {
-                        tareas.agregarArticulo(articulo);
-                        MessageBox.Show("Artículo agregado exitosamente");
-                    }
+                    case "agregar":
+                        //tareas.agregarArticulo(articulo);
+                        break;
+
+                    case "modificar":
+                        //tareas.modificarArticulo(articulo);
+                        break;
+
+                    case "eliminar":
+                        //tareas.eliminarArticulo(articulo);
+                        break;
                 }
-                else
-                {
-                    
-                }
-            
-                    //tareas.modificarArticulo(articulo);
-                    //MessageBox.Show("Artículo modificado exitosamente");
+                MessageBox.Show("Tarea realizada exitosamente","MENSAJE",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
-            catch(Exception error) 
-                {agregar = true; }
-            finally 
-                { Close(); }
-
-
-            
+            Close();
         }
-
+           
         private void txt_Imagen_Leave(object sender, EventArgs e)
         {
             Utilidades.CargarImagen(pb_Articulo, txt_Imagen.Text);
+        }
+
+        private void txt_Imagen_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter) 
+                Utilidades.CargarImagen(pb_Articulo,txt_Imagen.Text);
         }
     }
 }

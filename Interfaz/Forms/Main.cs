@@ -28,7 +28,6 @@ namespace Interfaz
             Tareas operacionesDB = new Tareas();
             try
             {
-
                 dgv_Articulos.DataSource = operacionesDB.listarArticulos();
                 dgv_Articulos.Columns["Imagen"].Visible = false;
                 dgv_Articulos.Columns["Id"].Visible = false;
@@ -36,7 +35,6 @@ namespace Interfaz
 
                 string logo = Utilidades.ObtenerRutaImagen("logo.png");
                 Utilidades.CargarImagen(pb_logo, logo);
-
             }
             catch (Exception error)
             {
@@ -47,16 +45,7 @@ namespace Interfaz
 
         private void Main_Load(object sender, EventArgs e)
         {
-            try
-            {
-                VentanaPrincipal();
-            }
-            catch (Exception error) 
-            {
-                MessageBox.Show (error.ToString()); 
-            }
-
-
+                VentanaPrincipal(); 
         }
 
         private void dgv_Articulos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -65,7 +54,6 @@ namespace Interfaz
             MostrarProducto mostrarProducto = new MostrarProducto(articulo);
             mostrarProducto.ShowDialog();
             VentanaPrincipal();
-            
         }
 
         private void btn_Buscar_Click(object sender, EventArgs e)
@@ -75,8 +63,39 @@ namespace Interfaz
 
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
-            MostrarProducto agregarProducto = new MostrarProducto();
+            MostrarProducto agregarProducto = new MostrarProducto(null,"agregar");
             agregarProducto.ShowDialog();
+            VentanaPrincipal();
+        }
+
+        private void dgv_Articulos_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                if (e.RowIndex >= 0 && e.ColumnIndex >= 0)//¿Celda valida?
+                {
+                    dgv_Articulos.ClearSelection();
+                    dgv_Articulos.Rows[e.RowIndex].Cells[e.ColumnIndex].Selected = true;
+                    contMenuStrip_Opciones.Show(Cursor.Position);
+                }
+            }
+        }
+
+        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Articulo articulo = (Articulo)dgv_Articulos.CurrentRow.DataBoundItem;
+            
+            MostrarProducto modificarProducto = new MostrarProducto(articulo,"modificar");
+            modificarProducto.ShowDialog();
+            VentanaPrincipal() ;
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Articulo articulo = (Articulo)dgv_Articulos.CurrentRow.DataBoundItem;
+
+            MostrarProducto modificarProducto = new MostrarProducto(articulo, "eliminar");
+            modificarProducto.ShowDialog();
             VentanaPrincipal();
         }
     }

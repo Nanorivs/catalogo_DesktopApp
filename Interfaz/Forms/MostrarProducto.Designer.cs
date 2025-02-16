@@ -164,10 +164,12 @@
             this.txt_Imagen.Name = "txt_Imagen";
             this.txt_Imagen.Size = new System.Drawing.Size(233, 22);
             this.txt_Imagen.TabIndex = 13;
+            this.txt_Imagen.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_Imagen_KeyDown);
             this.txt_Imagen.Leave += new System.EventHandler(this.txt_Imagen_Leave);
             // 
             // comBox_Categoria
             // 
+            this.comBox_Categoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comBox_Categoria.FormattingEnabled = true;
             this.comBox_Categoria.Location = new System.Drawing.Point(221, 223);
             this.comBox_Categoria.Name = "comBox_Categoria";
@@ -176,6 +178,7 @@
             // 
             // comBox_Marca
             // 
+            this.comBox_Marca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comBox_Marca.FormattingEnabled = true;
             this.comBox_Marca.Location = new System.Drawing.Point(221, 276);
             this.comBox_Marca.Name = "comBox_Marca";
@@ -216,6 +219,8 @@
             this.Controls.Add(this.lbl_Descripcion);
             this.Controls.Add(this.lbl_Nombre);
             this.Controls.Add(this.lbl_Codigo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "MostrarProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Producto";
