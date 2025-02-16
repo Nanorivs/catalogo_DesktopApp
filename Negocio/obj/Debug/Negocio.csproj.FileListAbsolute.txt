@@ -28,3 +28,13 @@ C:\Users\Mariano\Desktop\catalogo_DesktopApp\Negocio\obj\Debug\Negocio.pdb
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\Negocio\bin\Debug\AccesoDB.dll
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\Negocio\bin\Debug\AccesoDB.pdb
 C:\Users\Mariano\Desktop\catalogo_DesktopApp\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\Negocio\bin\Debug\Negocio.dll
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\Negocio\bin\Debug\AccesoDB.dll
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\Negocio\bin\Debug\AccesoDB.pdb
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\Negocio\obj\Debug\Negocio.dll
+C:\Users\Mariano\Desktop\Programación\catalogo_DesktopApp\Negocio\obj\Debug\Negocio.pdb
